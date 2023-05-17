@@ -1,0 +1,62 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+  background: #49589E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-layout{
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(6rem, auto) repeat(5, 6rem);
+  background-color: #42508F;
+  justify-content: center;
+}
+
+.calculator-layout > button{
+  color: white;
+  background-color: #7189F5;
+  border: 2px solid #42508F;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.calculator-layout > button:hover{
+  background-color: #4f64be;
+  transition: 0.3s all;
+}
+
+#span-three{
+  grid-column: span 3;
+}
+
+#span-two{
+  grid-column: span 2;
+}
+
+.outputs{
+  background-color: #242C4F;
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: white;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.outputs > .current-number{
+  font-size: 3rem;
+  margin: 2px;
+}
+
+.outputs > .previous-number{
+  font-size: 1.4rem;
+  margin: 2px;
+}
+
